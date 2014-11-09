@@ -11,9 +11,44 @@ API at a single place.
 
 Nothing right now.
 
+## Requirements
+
+Before installing this project, be sure you have these tools on your system:
+
+```
+php >= 5.5
+php-curl
+nodejs
+npm
+```
+On debian, you should take care of also having:
+
+```
+nodejs-legacy
+```
+
 ## Installation
 
-Nothing right now.
+The first step is to clone this repository:
+
+```
+git clone git@github.com:re7/front.git
+```
+
+Then, go into this folder and get composer:
+
+```
+curl -sS https://getcomposer.org/installer | php
+```
+
+Finally, you should install vendors (PHP and npm) and assets:
+
+```
+php composer.phar install
+sudo npm install
+sudo npm install -g gulp
+gulp install
+```
 
 ## Special thanks
 

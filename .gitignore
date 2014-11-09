@@ -12,3 +12,11 @@
 !bin/console
 !bin/symfony_requirements
 /composer.phar
+
+# About node
+/node_modules/
+
+# About gulp
+/web/css
+/web/js
+/web/img
