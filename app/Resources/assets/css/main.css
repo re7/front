@@ -1,40 +1,72 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 body {
-    background-color: #FFFBF4;
-    font-family: Lato;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 34px;
+    color: #FFC107;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 #navbar {
-    background-color: black;
-    color: #FFFBF4;
+    font-size: 24px;
+    height: 64px;
+    background-color: #FFC107;
+    color: #FFFFFF;
     text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    position: relative;
+    z-index: 10;
+    line-height: 64px;
 }
 
 #navbar .pure-menu {
     font-size: 150%;
     max-width: 1280px;
     margin: auto;
-    background-color: black;
+    background-color: #FFC107;
+}
+
+#navbar .pure-menu * {
+    vertical-align: top;
 }
 
 #navbar .pure-menu a {
+    font-size: 24px;
+    border: 0;
+    vertical-align: top;
     color: #FFFBF4;
+    line-height: 64px;
+    padding: 0;
 }
 
 #navbar .pure-menu a:hover {
-    background-color: #333;
+    background-color: #FFC107;
 }
 
-#navbar .home {
+#navbar .pure-menu a.home {
     font-weight: bold;
     position: relative;
-    line-height: 57px;
     padding-left: 60px;
 }
 
-#navbar .home::before {
+#navbar .pure-menu a.home::before {
     content: "";
     position: absolute;
     background-image: url('../img/logo.png');
@@ -45,13 +77,19 @@ body {
 }
 
 .top-hero {
-    background-image: url('../img/glitched.png');
+    height: 240px;
+    font-family: Lato;
+    background-image: url('../img/title-background.png');
+    /*background-image: url('../img/glitched.png');*/
+    background-color: #FFECB3;
+    color: rgba(0, 0, 0, 0.87);
+    color: #FFFFFF;
 }
+
 .top-hero .content {
     max-width: 1280px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     vertical-align: center;
     /*padding: 40px 0;*/
     text-transform: uppercase;
@@ -61,35 +99,43 @@ body {
     margin: 0;
     font-size: 160px;
     line-height: 125px;
-    margin-left: 20%;
-    padding-top: 30px;
+    margin-left: 45%;
+    padding-top: 41px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    color: white;
 }
 
 .top-hero .content p {
     margin: 0;
-    margin-left: 20%;
+    margin-left: 45%;
     font-weight: bold;
     font-size: 28px;
     padding-left: 11px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 #content .page {
-    max-width: 1330px;
+    max-width: 1280px;
     margin: auto;
 }
 
-#content .argument-box {
-    padding: 0 25px;
+#content .arguments {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#content .arguments .box {
+    padding: 0 15px;
     box-sizing: border-box;
     color: white;
 }
 
-#content .argument-box>div {
+#content .arguments .box>div {
     background-color: #BADA55;
 }
 
-#content .argument-box h3 {
+#content .arguments .box h3 {
     color: white;
     font-size: 1.5em;
     text-align: left;
@@ -101,7 +147,7 @@ body {
 
 }
 
-#content .argument-box p {
+#content .arguments .box p {
     font-family: Roboto;
     font-weight: bold;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
@@ -111,29 +157,22 @@ body {
     margin-top: 0;
 }
 
-#content .argument-box .video {
+#content .arguments .box .video {
     background-color: #26C0F3;
 }
 
-#content .argument-box .tuto {
+#content .arguments .box .tuto {
     background-color: #D22F2F;
 }
 
-#content .argument-box .sharing {
+#content .arguments .box .sharing {
     background-color: #62D848;
 }
 
 #content .explaination {
-    margin: 0 25px;
     padding: 40px 0;
-    font-size: 1.5em;
-    line-height: 150%;
-    color: #333;
 }
 
 #content .explaination h2 {
     text-align: center;
-    font-size: 2em;
-    color: #eca937;
-    margin-bottom: 60px;
 }
