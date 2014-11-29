@@ -2,26 +2,67 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 body {
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     color: rgba(0, 0, 0, 0.87);
     font-family: Roboto, sans-serif;
     font-size: 13px;
     font-weight: normal;
 }
 
-h1 {
+body h1 {
     font-weight: normal;
     font-size: 34px;
     color: #FFC107;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
-h2 {
+body h2 {
     font-size: 20px;
     font-weight: normal;
+    margin: 0 0 30px 0;
 }
 
-h3 {
+body h3 {
     font-size: 15px;
+}
+
+body p {
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+
+body img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    max-height: 150px;
+}
+
+body hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin-top: 48px;
+}
+
+body a {
+    color: #FFA000;
+}
+
+body a.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 1);
+    background-color: #76FF03;
 }
 
 #navbar {
@@ -77,11 +118,9 @@ h3 {
 }
 
 .top-hero {
-    height: 240px;
+    max-height: 230px;
     font-family: Lato;
-    background-image: url('../img/title-background.png');
-    /*background-image: url('../img/glitched.png');*/
-    background-color: #FFECB3;
+    background-color: #FFA000;
     color: rgba(0, 0, 0, 0.87);
     color: #FFFFFF;
 }
@@ -89,17 +128,15 @@ h3 {
 .top-hero .content {
     max-width: 1280px;
     margin: auto;
-    /*background-color: rgba(0, 0, 0, 0.7);*/
     vertical-align: center;
-    /*padding: 40px 0;*/
     text-transform: uppercase;
 }
 
 .top-hero .content h1 {
+    text-align: left;
     margin: 0;
     font-size: 160px;
     line-height: 125px;
-    margin-left: 45%;
     padding-top: 41px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.87);
@@ -108,7 +145,6 @@ h3 {
 
 .top-hero .content p {
     margin: 0;
-    margin-left: 45%;
     font-weight: bold;
     font-size: 28px;
     padding-left: 11px;
@@ -120,59 +156,32 @@ h3 {
     margin: auto;
 }
 
-#content .arguments {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-#content .arguments .box {
-    padding: 0 15px;
-    box-sizing: border-box;
-    color: white;
-}
-
-#content .arguments .box>div {
-    background-color: #BADA55;
-}
-
-#content .arguments .box h3 {
-    color: white;
-    font-size: 1.5em;
-    text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    padding: 15px 15px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-#content .arguments .box p {
-    font-family: Roboto;
-    font-weight: bold;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 120%;
-    padding: 15px;
-    margin-top: 0;
-}
-
-#content .arguments .box .video {
-    background-color: #26C0F3;
-}
-
-#content .arguments .box .tuto {
-    background-color: #D22F2F;
-}
-
-#content .arguments .box .sharing {
-    background-color: #62D848;
-}
-
 #content .explaination {
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
-#content .explaination h2 {
-    text-align: center;
+#content .explaination p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#content .events {
+    padding: 80px 0;
+}
+
+#content .events .pure-g {
+    box-sizing: border-box;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#content .events .pure-g>div {
+    box-sizing: border-box;
+    padding: 48px 15px 32px 15px;
+}
+
+#content .events .event .date {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+    line-height: 24px;
 }

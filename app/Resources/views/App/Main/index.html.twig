@@ -2,35 +2,12 @@
 
 {% block content %}
     <div class="page">
-        <div class="explaination">
-            <h1>Qu'est-ce que RE-7 ?</h1>
-            <p>
-                <strong>RE-7</strong> est l'association francophone pour la
-                promotion du speedrun. Nous sommes ici pour vous donner accès à
-                toutes les ressources dont vous pourriez avoir besoin pour bien
-                débuter le speedrun. Et nous sommes ici pour faire bouger la
-                scène du speedrun.
-            </p>
+        <div>
+            {{ include(':App/Main:index/explaination.html.twig') }}
         </div>
-        <div class="arguments pure-g">
-            <div class="box pure-u-1-3">
-                <div class="video">
-                    <h3>vidéos</h3>
-                    <p>Visionnez des speedruns récents de vos jeux favoris !</p>
-                </div>
-            </div>
-            <div class="box pure-u-1-3">
-                <div class="tuto">
-                    <h3>tutoriels</h3>
-                    <p>Apprenez vous aussi l'art du speedrun !</p>
-                </div>
-            </div>
-            <div class="box pure-u-1-3">
-                <div class="sharing">
-                    <h3>échanges</h3>
-                    <p>Partagez vos temps, connaissances et expériences avec la communauté !</p>
-                </div>
-            </div>
+        <hr />
+        <div>
+            {{ include(':App/Main:index/events.html.twig') }}
         </div>
     </div>
 {% endblock %}
