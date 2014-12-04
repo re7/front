@@ -26,12 +26,15 @@ ADD . /var/www/project
 WORKDIR /var/www/project
 
 # Setup the symfony project
-
 RUN npm install
 RUN npm install -g gulp
 RUN gulp install
 RUN curl -sS https://getcomposer.org/installer | php
 RUN php composer.phar install
+
+# Set permissions for cache and logs (should be done in a better way)
+RUN chown -R www-data var/cache
+RUN chown -R www-data var/logs
 
 # Add the start script
 ADD docker/start.sh /
