@@ -10,12 +10,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class FrontController extends Controller
 {
     /**
-    * The action for the front homepage
-    *
-    * @return \Symfony\Component\HttpFoundation\Response
-    */
+     * Display all existing questions of the FAQ
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
-        return $this->render('AppAppBundle:FAQ/Front:index.html.twig');
+        $categories = $this->get('app_faq.reader')->findAll();
+
+        return $this->render('AppAppBundle:FAQ/Front:index.html.twig', [
+            'categories' => $categories,
+        ]);
     }
 }
