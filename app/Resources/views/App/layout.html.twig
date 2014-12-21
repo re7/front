@@ -4,20 +4,13 @@
     <div id="navbar">
         <div class="pure-menu pure-menu-open pure-menu-horizontal">
             <ul>
-                <li><a class="home" href="{{ path('app_app_homepage') }}">Accueil</a></li>
+                <li><a class="home" href="{{ path('app_homepage') }}">Accueil</a></li>
+                <li><a href="{{ path('app_faq_index') }}">FAQ</a></li>
             </ul>
         </div>
     </div>
-    <div class="top-hero">
-        <div class="content">
-            <h1>RE-7</h1>
-            <p>Le temple du speedrun</p>
-        </div>
-    </div>
     <div id="content">
-        {% block content %}
-
-        {% endblock %}
+        {% block content %}{% endblock %}
     </div>
     <div id="footer" class="pure-g">
 

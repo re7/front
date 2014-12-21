@@ -94,7 +94,7 @@ body a.button {
     vertical-align: top;
     color: #FFFBF4;
     line-height: 64px;
-    padding: 0;
+    padding: 0 20px;
 }
 
 #navbar .pure-menu a:hover {

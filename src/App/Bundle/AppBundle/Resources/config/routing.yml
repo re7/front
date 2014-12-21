@@ -1,3 +1,7 @@
-app_app_homepage:
+app_homepage:
     path:     /
     defaults: { _controller: AppAppBundle:Main:index }
+
+app_faq:
+    resource: "@AppAppBundle/Resources/config/routing/faq.yml"
+    prefix:   /faq
