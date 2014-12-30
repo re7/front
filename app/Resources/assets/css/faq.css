@@ -56,7 +56,7 @@
     font-weight: 13px;
     font-size: medium;
     text-decoration: none;
-    border-left: 4px solid #FFECB3;
+    border-left: 4px solid #76FF03;
 }
 
 #faq .category {
@@ -68,6 +68,6 @@
 }
 
 #faq .category .question p {
-    color: rgba(0, 0, 0, 0.54);
-    margin-left: 40px;
+    border-left: 4px solid #FFECB3;
+    padding-left: 36px;
 }
