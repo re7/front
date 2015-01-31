@@ -7,4 +7,5 @@ Features:
 
 Fixes:
 
+* Homepage - desrciption font size is too high - [#3](https://github.com/re7/front/issues/3)
 * Remove unused dependencies - [#8](https://github.com/re7/front/issues/8)
