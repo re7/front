@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace App\Bundle\AppBundle\Controller\FAQ;
+namespace App\Bundle\AppBundle\Controller\Glossary;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
- * The controller for front pages of the FAQ
+ * The controller for pages of the glossary
  */
-class FrontController extends Controller
+class MainController extends Controller
 {
     /**
-     * Display all existing questions of the FAQ
+     * Display all existing definitions of the glossary
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
     {
-        $categories = $this->get('app_faq.reader')->findAll();
+        $categories = $this->get('app_glossary.reader')->findAll();
 
-        return $this->render('AppAppBundle:FAQ/Front:index.html.twig', [
+        return $this->render('AppAppBundle:Glossary/Main:index.html.twig', [
             'categories' => $categories,
         ]);
     }
