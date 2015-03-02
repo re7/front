@@ -51,6 +51,7 @@ class StaticGlossaryReader implements ReaderInterface
                 new Question('CAC', 'Corps à corps.'),
                 new Question('DPS', 'Dégats par seconde.'),
                 new Question('Drop', 'Butin abandonné par un adversaire en mourant. Butin (items, argent, etc) délaissé, relâché à la mort d’un ennemi.'),
+                new Question('Emulateur', 'Logiciel permettant de simuler le comportement d’une console sur un PC.'),
                 new Question('Frame', 'Une image affichée selon la fréquence de mise à jour d’affichage du jeu (rafraîchissement). Généralement, une frame représente de 1/30 ou 1/60 de seconde. Temps pris par le jeu pour mettre à jour l’affichage et considérer un input.'),
                 new Question('Glitch', 'Une erreur ou un oubli dans la programmation du jeu donnant lieu à des choses imprévues, souvent exploitées par les runners.'),
                 new Question('Hitbox', 'La \"hitbox\" - ou masque de collisions - est une forme ou une série de formes en général invisibles qui détermine à partir de quelle zone le joueur ou un ennemi va se prendre un dégât ou être en mesure de toucher l’autre. Zone dans laquelle une collision entre deux éléments est détectée.'),
@@ -114,7 +115,7 @@ class StaticGlossaryReader implements ReaderInterface
                 new Question('All bosses', 'Un run all bosses consiste à tuer tous les boss du jeu (voir Dark Souls ou Metal Gear Solid).'),
                 new Question('Run Pacifiste', 'Le run pacifiste est une catégorie de runs trouvable sur certains jeux. Elle consiste à tuer le minimum d’ennemis possibles dans une partie allant à la fin du jeu. Dans ce genre de run, seuls les boss ou ennemis qu’on ne peut épargner seront tués.'),
             ]),
-            new Category('Jardon Twitch', 'jargon-twitch', [
+            new Category('Jargon Twitch', 'jargon-twitch', [
                 new Question('GLOD', 'Désigne un split doré, comprennez le meilleur temps jamais réalisé par le runner sur ce segment.'),
                 new Question('Raid', 'A la fin d’un stream, certains streamers aiment "raider" un autre streamer, c’est à dire lui envoyer tous leurs viewers avec un message identique envoyé sur le chat.'),
                 new Question('Teh Urn', 'Façon de dire "THE RUN", un run particulièrement prometteur.'),
