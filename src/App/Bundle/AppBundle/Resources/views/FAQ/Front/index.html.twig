@@ -1,0 +1,30 @@
+{% extends ':App:layout.html.twig' %}
+
+{% block content %}
+    <div class="faq page">
+        <h1>{% block faqTitle %}Espace questions-réponses{% endblock %}</h1>
+        <div class="pure-g">
+            <div class="pure-u-1-4">
+                <ul class="menu">
+                    {% for category in categories %}
+                        <li><a href="#{{ category.slug }}">{{ category.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="pure-u-3-4">
+                {% for category in categories %}
+                    <div class="category">
+                        <h2 id="{{ category.slug }}">{{ category.title }}</h2>
+                        {% for question in category.questions %}
+                            <div class="question">
+                                <h3>{{ question.title }}</h3>
+                                <p>{{ question.answer|striptags('<strong>')|raw|nl2br }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% if not loop.last %}<hr />{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

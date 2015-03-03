@@ -1,0 +1,3 @@
+app_faq_index:
+    path:     /faq
+    defaults: { _controller: AppAppBundle:FAQ/Front:index }

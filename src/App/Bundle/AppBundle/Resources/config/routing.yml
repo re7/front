@@ -1,0 +1,11 @@
+app_homepage:
+    path:     /
+    defaults: { _controller: AppAppBundle:Main:index }
+
+app_faq:
+    resource: "@AppAppBundle/Resources/config/routing/faq.yml"
+    prefix:   /
+
+app_glossary:
+    resource: "@AppAppBundle/Resources/config/routing/glossary.yml"
+    prefix:   /

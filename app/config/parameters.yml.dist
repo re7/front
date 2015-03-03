@@ -1,0 +1,12 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    locale:          en
+    # A secret key that's used to generate certain security-related tokens
+    secret:          ThisTokenIsNotSoSecretChangeIt
+    debug_toolbar:   true
+    debug_redirects: false
+    # You can remove both entries to deactivate piwik
+    # Should be the id given by your piwik configuration
+    piwik.site_id: false
+    # Should be piwik.domain.tld
+    piwik.tracker_url: false

@@ -1,0 +1,3 @@
+app_glossary_index:
+    path:     /lexique
+    defaults: { _controller: AppAppBundle:Glossary/Main:index }
