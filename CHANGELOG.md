@@ -2,6 +2,7 @@
 
 Features:
 
+* Add a new page for the glossary and remove it from the FAQ
 * Add a FAQ page containing many questions
 * Create an empty changelog (and a paradox)
 
