@@ -1,4 +1,4 @@
-{% extends ':App:layout.html.twig' %}
+{% extends 'AppAppBundle::layout.html.twig' %}
 
 {% block content %}
     <div class="top-hero">
@@ -9,11 +9,11 @@
     </div>
     <div class="page">
         <div>
-            {{ include(':App/Main:index/explaination.html.twig') }}
+            {{ include('AppAppBundle:Main:index/explaination.html.twig') }}
         </div>
         <hr />
         <div>
-            {{ include(':App/Main:index/events.html.twig') }}
+            {{ include('AppAppBundle:Main:index/events.html.twig') }}
         </div>
     </div>
 {% endblock %}

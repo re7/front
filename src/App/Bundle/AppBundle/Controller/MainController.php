@@ -16,7 +16,7 @@ class MainController extends Controller
      */
     public function indexAction()
     {
-        return $this->render(':App/Main:index.html.twig');
+        return $this->render('AppAppBundle:Main:index.html.twig');
     }
 
     /**
@@ -29,7 +29,7 @@ class MainController extends Controller
         $siteId     = $this->container->hasParameter('piwik.site_id') ? $this->container->getParameter('piwik.site_id') : null;
         $trackerUrl = $this->container->hasParameter('piwik.tracker_url') ? $this->container->getParameter('piwik.tracker_url') : null;
 
-        return $this->render(':App:piwik.html.twig', [
+        return $this->render('AppAppBundle:Main:piwik.html.twig', [
             'siteId'     => $siteId,
             'trackerUrl' => $trackerUrl,
         ]);
