@@ -5,12 +5,17 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 ### Changed
+
+### Fixed
+
+### Removed
+
+## v1.0.7 - 2015-11-02
+### Changed
 - Events on the homepage
 
 ### Fixed
 - Responsive on the FAQ and Glossary pages
-
-### Removed
 
 ## v1.0.6
 ### Added
