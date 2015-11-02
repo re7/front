@@ -1,0 +1,23 @@
+{% extends 'AppAppBundle::layout.html.twig' %}
+
+{% block content %}
+    <div class="container-fluid top-hero">
+        <div class="row">
+            <div class="col-md-12">
+                <svg viewBox="0 0 200 100">
+                    <text x="0" y="75" style="font-size: 88px;">RE-7</text>
+                    <text x="6" y="88" style="font-size: 15px; text-transform: uppercase;">Le temple du speedrun</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div>
+            {{ include('AppAppBundle:Main:index/explaination.html.twig') }}
+        </div>
+        <hr />
+        <div>
+            {{ include('AppAppBundle:Main:index/events.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
