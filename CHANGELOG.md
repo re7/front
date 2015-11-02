@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - Events on the homepage
 
 ### Fixed
+- Responsive on the FAQ and Glossary pages
 
 ### Removed
 
